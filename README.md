@@ -1,5 +1,6 @@
-![alt-text](risk_pic.png "Stock Market Risk") 
 # Stock Market Risk Calculator
+
+![alt-text](risk_pic.png "Stock Market Risk") 
 
 This program is designed to assess the risk associated with individual stocks and the overall portfolio by calculating 
 key statistical measures such as variance, standard deviation, covariance, and weighted return. It utilizes historical 
