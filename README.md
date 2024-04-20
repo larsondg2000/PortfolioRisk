@@ -7,6 +7,19 @@ stock data fetched from Yahoo Finance and performs quantitative risk analysis to
 
 ![alt-text](most_least.png "Most and Least Risky Stocks") 
 
+### Diversification is Key
+Analyzing the S and P 500 risk, it shows the power of diversification. The S and P 500 index has a much lower risk than 
+owning popular individual "Magnificent 7" stocks.
+
+| Metric                      | Risk        |  
+|-----------------------------|-------------|
+| S and P Overall Risk        | 0.224313377 |
+| S and P Mean (all stocks)   | 0.341956448 |
+| S and P Average (all stocks) | 0.354114634 |
+| 'Mag 7'    NVDA             | 0.516539679 |
+| 'Mag 7'    TSLA             | 0.644386800 |
+| 'Mag 7'    META             | 0.442057689 |
+
 ## Features
 
 - **Ticker and Weight Extraction**: Reads a CSV file to create lists of stock tickers and their corresponding weights in the portfolio.
