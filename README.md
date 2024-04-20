@@ -19,7 +19,8 @@ stock data fetched from Yahoo Finance and performs quantitative risk analysis to
 
 ## Usage
 
-1. Input the portfolio details in `my_stocks.csv`.
+1. Input the portfolio details in `my_stocks.csv`. 
+   - Note: columns need to be 'Ticker' and 'Value'
 2. Run the program to generate `stock_prices.csv` and `risk_output.csv`.
 3. View the plotted risk chart for a graphical representation of risk distribution.
 
