@@ -44,6 +44,7 @@ def get_historical_returns(stocks: List[str]) -> None:
     df = pd.DataFrame(data)
     df.index = df.index.tz_localize(None)
     df.bfill(inplace=True)
+
     df.to_csv('stock_prices.csv', index=True)
 
 
@@ -62,8 +63,8 @@ def calculate_risk(weights: List[float]) -> None:
 
     var_p = np.dot(np.transpose(weights), np.dot(vcv_matrix, weights))
     sd_p = np.sqrt(var_p)
-    sd_p_annual = sd_p * np.sqrt(250)
 
+    sd_p_annual = sd_p * np.sqrt(250)
     print(f"Portfolio Risk- annual: {sd_p_annual}")
     print("**********************")
 
@@ -76,6 +77,7 @@ def calculate_risk(weights: List[float]) -> None:
 
     total_risks.index.name = 'Ticker'
     total_risks.name = 'Risk'
+
     total_risks.to_csv('risk_output.csv', index=True)
 
     plot_risks()
